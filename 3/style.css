@@ -1,0 +1,43 @@
+body {
+background-color: #111;
+display: grid;
+place-items: center;
+height: 100vh;
+overflow: hidden;
+}
+.checkyborder {
+width: 100px;
+height: 100px;
+background-color: #fff;
+border-radius: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.ischecked {
+background: conic-gradient(from var(--angle), #00bfff 1%, #800080 40%, #ff69b4 65%, #0000ff 80%, #00bfff 85%);
+}
+.checky {
+width: 80px;
+height: 80px;
+appearance: none;
+border-radius: 100%;
+box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+display: flex;
+background: #111;
+justify-content: center;
+align-items: center;
+z-index: 10;
+}
+.checky:checked:after {
+content: '\2714';
+width: 100%;
+height: 100%;
+border-radius: 8px;
+position: absolute;
+color: skyblue;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 52px;
+}
